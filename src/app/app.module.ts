@@ -8,12 +8,17 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component'
 import { HomeComponent } from './views/home/home.component';
+import { AssociadoCreateComponent } from './components/associado/associado-create/associado-create.component';
+
+import { TitleGreenDirective } from './directives/title-green.directive';
+import { ForDirective } from './directives/for.directive';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { AssociadoComponent } from './views/associado/associado.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,10 @@ import { AssociadoComponent } from './views/associado/associado.component';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    AssociadoComponent
+    AssociadoComponent,
+    TitleGreenDirective,
+    ForDirective,
+    AssociadoCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +39,8 @@ import { AssociadoComponent } from './views/associado/associado.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
